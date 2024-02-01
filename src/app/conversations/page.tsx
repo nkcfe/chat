@@ -1,7 +1,7 @@
 import React from "react";
 
-const ConversationPage = () => {
-  return <div></div>;
+const page = () => {
+  return <div>ConversationPage</div>;
 };
 
-export default ConversationPage;
+export default page;

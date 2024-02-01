@@ -1,3 +1,4 @@
+import Sidebar from "@/components/sidebar/Sidebar";
 import React, { ReactNode } from "react";
 
 interface ConversationLayoutProps {
@@ -6,7 +7,11 @@ interface ConversationLayoutProps {
 
 const ConversationLayout = (props: ConversationLayoutProps) => {
   const { children } = props;
-  return <div className="w-full">{children}</div>;
+  return (
+    <Sidebar>
+      <div className="h-full">{children}</div>
+    </Sidebar>
+  );
 };
 
 export default ConversationLayout;

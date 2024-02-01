@@ -11,6 +11,7 @@ const Sidebar = async (props: SidebarProps) => {
   const { children } = props;
 
   const currentUser = await getCurrentUser();
+  console.log(currentUser);
 
   return (
     <div className="h-full">
