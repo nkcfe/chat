@@ -3,7 +3,7 @@
 import React from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { ClipLoader } from "react-spinners";
-const LoadingModal = () => {
+const page = () => {
   return (
     <div>
       <Transition.Root show as={React.Fragment}>
@@ -43,4 +43,4 @@ const LoadingModal = () => {
   );
 };
 
-export default LoadingModal;
+export default page;

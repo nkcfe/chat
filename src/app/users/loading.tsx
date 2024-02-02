@@ -1,7 +1,8 @@
+import LoadingModal from "@/components/modals/LoadingModal";
 import React from "react";
 
 const Loading = () => {
-  return <div></div>;
+  return <LoadingModal />;
 };
 
 export default Loading;
