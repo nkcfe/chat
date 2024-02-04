@@ -8,8 +8,13 @@ import { find } from "lodash";
 import React, { useEffect, useRef, useState } from "react";
 import MessageBox from "./MessageBox";
 
-const Body = () => {
-  const [messages, setMessages] = useState<FullMessageType[]>([]);
+interface Props {
+  initialMessages: FullMessageType[];
+}
+
+const Body = (props: Props) => {
+  const { initialMessages } = props;
+  const [messages, setMessages] = useState<FullMessageType[]>(initialMessages);
   const { conversationId } = useConversation();
 
   const ref = useRef<HTMLDivElement>(null);
