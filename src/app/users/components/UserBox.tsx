@@ -18,10 +18,11 @@ const UserBox = (props: UserBoxProps) => {
 
   const handleClick = () => {
     setIsLoading(true);
+    console.log("hi");
     axios
       .post("/api/conversations", { userId: data.id })
       .then((data) => {
-        router.push(`/coversations/${data.data.id}`);
+        router.push(`/conversations/${data.data.id}`);
       })
       .catch((error) => {
         console.error(error);

@@ -2,7 +2,7 @@ import clsx from "clsx";
 import React from "react";
 
 interface ButtonProps {
-  type: "button" | "submit" | "reset" | undefined;
+  type?: "button" | "submit" | "reset" | undefined;
   fullWidth?: boolean;
   children?: React.ReactNode;
   onClick?: () => void;
@@ -35,8 +35,11 @@ const Button = (props: ButtonProps) => {
         disabled && "opacity-50 cursor-default",
         fullWidth && "w-full",
         secondary ? "text-gray-900" : "text-white",
-        danger && "bg-rose-500 hover:bg-rose 600 focus-visible:outline-rose-600",
-        !secondary && !danger && "bg-orange-500 hover:bg-orange-600 focus-visible:outline-orange-600"
+        danger &&
+          "bg-rose-500 hover:bg-rose 600 focus-visible:outline-rose-600",
+        !secondary &&
+          !danger &&
+          "bg-orange-500 hover:bg-orange-600 focus-visible:outline-orange-600"
       )}
     >
       {children}

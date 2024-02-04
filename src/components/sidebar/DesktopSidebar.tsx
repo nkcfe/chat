@@ -23,6 +23,7 @@ const DesktopSidebar = (props: DesktopSidebarProps) => {
         lg:left-0
         xl:px-6
         lg:z-40
+        lg:w-20
         lg:border-r-[1px]
         lg:bg-orange-400
         lg:pb-4
